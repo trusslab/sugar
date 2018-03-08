@@ -1,0 +1,42 @@
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   com.apple.WebCore             	0x00007fffbf0c4ec4 WebCore::GraphicsContext3D::getInternalFramebufferSize() const + 4
+1   com.apple.WebCore             	0x00007fffbfc6746e WebCore::WebGLRenderingContextBase::drawingBufferWidth() const + 46
+2   com.apple.WebCore             	0x00007fffbf670215 WebCore::jsWebGLRenderingContextBaseDrawingBufferWidth(JSC::ExecState*, long long, JSC::PropertyName) + 181
+3   com.apple.JavaScriptCore      	0x00007fffba333ab7 llint_slow_path_get_by_val + 5303
+4   com.apple.JavaScriptCore      	0x00007fffbaadd586 llint_entry + 13416
+5   com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+6   com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+7   com.apple.JavaScriptCore      	0x00007fffbaae0ca0 llint_entry + 27522
+8   com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+9   com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+10  com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+11  com.apple.JavaScriptCore      	0x00007fffbaae096d llint_entry + 26703
+12  com.apple.JavaScriptCore      	0x00007fffbaad9f3b vmEntryToJavaScript + 299
+13  com.apple.JavaScriptCore      	0x00007fffba9b517e JSC::JITCode::execute(JSC::VM*, JSC::ProtoCallFrame*) + 158
+14  com.apple.JavaScriptCore      	0x00007fffba1d9ab9 JSC::Interpreter::executeCall(JSC::ExecState*, JSC::JSObject*, JSC::CallType, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&) + 505
+15  com.apple.JavaScriptCore      	0x00007fffba5e41e5 JSC::profiledCall(JSC::ExecState*, JSC::ProfilingReason, JSC::JSValue, JSC::CallType, JSC::CallData const&, JSC::JSValue, JSC::ArgList const&, WTF::NakedPtr<JSC::Exception>&) + 197
+16  com.apple.WebCore             	0x00007fffbeb9fe2e WebCore::JSEventListener::handleEvent(WebCore::ScriptExecutionContext*, WebCore::Event*) + 1262
+17  com.apple.WebCore             	0x00007fffbeff7984 WebCore::EventTarget::fireEventListeners(WebCore::Event&, WTF::Vector<WTF::RefPtr<WebCore::RegisteredEventListener>, 1ul, WTF::CrashOnOverflow, 16ul>) + 436
+18  com.apple.WebCore             	0x00007fffbeff75ef WebCore::EventTarget::fireEventListeners(WebCore::Event&) + 415
+19  com.apple.WebCore             	0x00007fffbef9cdf6 WebCore::DOMWindow::dispatchEvent(WebCore::Event&, WebCore::EventTarget*) + 246
+20  com.apple.WebCore             	0x00007fffbeb4af93 WebCore::DOMWindow::dispatchLoadEvent() + 291
+21  com.apple.WebCore             	0x00007fffbeb18b01 WebCore::Document::implicitClose() + 385
+22  com.apple.WebCore             	0x00007fffbeb18523 WebCore::FrameLoader::checkCompleted() + 275
+23  com.apple.WebCore             	0x00007fffbeaebbb0 WebCore::ThreadTimers::sharedTimerFiredInternal() + 176
+24  com.apple.WebCore             	0x00007fffbeaebaef WebCore::timerFired(__CFRunLoopTimer*, void*) + 31
+25  com.apple.CoreFoundation      	0x00007fffb7d14c54 __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 20
+26  com.apple.CoreFoundation      	0x00007fffb7d148df __CFRunLoopDoTimer + 1071
+27  com.apple.CoreFoundation      	0x00007fffb7d1443a __CFRunLoopDoTimers + 298
+28  com.apple.CoreFoundation      	0x00007fffb7d0bb81 __CFRunLoopRun + 2065
+29  com.apple.CoreFoundation      	0x00007fffb7d0b114 CFRunLoopRunSpecific + 420
+30  com.apple.HIToolbox           	0x00007fffb726cebc RunCurrentEventLoopInMode + 240
+31  com.apple.HIToolbox           	0x00007fffb726ccf1 ReceiveNextEventCommon + 432
+32  com.apple.HIToolbox           	0x00007fffb726cb26 _BlockUntilNextEventMatchingListInModeWithFilter + 71
+33  com.apple.AppKit              	0x00007fffb5805a54 _DPSNextEvent + 1120
+34  com.apple.AppKit              	0x00007fffb5f817ee -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 2796
+35  com.apple.AppKit              	0x00007fffb57fa3db -[NSApplication run] + 926
+36  com.apple.AppKit              	0x00007fffb57c4e0e NSApplicationMain + 1237
+37  libxpc.dylib                  	0x00007fffcd6de8c7 _xpc_objc_main + 775
+38  libxpc.dylib                  	0x00007fffcd6dd2e4 xpc_main + 494
+39  com.apple.WebKit.WebContent   	0x00000001004fa7a2 0x1004f9000 + 6050
+40  libdyld.dylib                 	0x00007fffcd485235 start + 1
