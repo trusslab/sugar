@@ -81,5 +81,6 @@ If you have installed llvm-3.8, and still see this error, modify `configure.ac`:
 
 ```sh
 vim configure.ac
-# replace 'llvm-config' with 'llvm-config-3.8'
+# find the if statement that causes this problem by searching for "$llvm_prefix"
+# replace all 'llvm-config' with 'llvm-config-3.8' in the if statement
 ```
