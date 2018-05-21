@@ -84,3 +84,7 @@ vim configure.ac
 # find the if statement that causes this problem by searching for "$llvm_prefix"
 # replace all 'llvm-config' with 'llvm-config-3.8' in the if statement
 ```
+
+## Acknowledgments
+
+The work was supported by NSF Award #1617513.

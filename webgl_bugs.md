@@ -1406,3 +1406,6 @@ This is still dangerous because web apps are not trusted. Web apps partially do 
 
 Sugar can prevent this bug from leaking compositor's texture because all WebGL graphic stack is in the renderer. WebGL has no access to the GPU process memory.
 
+## Acknowledgments
+
+The work was supported by NSF Award #1617513.
